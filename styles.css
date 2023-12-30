@@ -1,0 +1,49 @@
+body {
+    min-height: 100vh;
+    /* Isso garante que o conteúdo da página ocupe pelo menos toda a altura da viewport. */
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+    /* Faz com que o container ocupe o espaço restante entre o header e o footer. */
+}
+
+footer {
+    background-color: #343a40;
+    /* Cor do footer (pode ser ajustada conforme necessário). */
+    color: white;
+    /* Cor do texto no footer (pode ser ajustada conforme necessário). */
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    bottom: 0;
+}
+
+nav.navbar {
+    width: 100%;
+    background-color: #1f2123 !important;
+    /* Adicione a cor de fundo desejada para o menu */
+}
+
+nav.navbar a {
+    color: white !important;
+    text-transform: uppercase;
+    font-weight: 300;
+    transition: color 0.3s;
+    /* Efeito de transição de cor */
+    /* Garante que os links no menu tenham a cor branca */
+}
+
+.navbar-nav .nav-item a:hover {
+    color: #ffc107 !important;
+    font-weight: bold;
+    /* Cor ao passar o mouse (pode ser ajustada) */
+}
+
+.navbar-nav .nav-item.active a {
+    color: #ffc107 !important;
+    font-weight: bold;
+    /* Cor ao passar o mouse (pode ser ajustada) */
+}
